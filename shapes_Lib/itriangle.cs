@@ -11,7 +11,6 @@ public class itriangle : IShape
 
     public double CalculatePerimeter()
     {
-        // Assuming it's an equilateral triangle for simplicity
         return 3 * Base;
     }
 }
