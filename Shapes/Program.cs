@@ -30,7 +30,7 @@ var featureManagement = new Dictionary<string, string> {{ "FeatureManagement:Squ
              }
             else
             {
-                Console.WriteLine("Square feature is not enabled.");
+                Console.WriteLine("Square feature is not enabled in your workspace.");
             }
 
 
@@ -50,7 +50,7 @@ var featureManagement = new Dictionary<string, string> {{ "FeatureManagement:Squ
              }
             else
             {
-                Console.WriteLine("rectangle feature is not enabled.");
+                Console.WriteLine("rectangle feature is not enabled in your workspace.");
             }
             if (await featureManager.IsEnabledAsync("triangle"))
             {
@@ -62,5 +62,5 @@ var featureManagement = new Dictionary<string, string> {{ "FeatureManagement:Squ
                 Console.WriteLine($"Triangle Area: {triangle.CalculateArea()}, Perimeter: {triangle.CalculatePerimeter()}");}
             else
             {
-                Console.WriteLine("triangle feature is not enabled.");
+                Console.WriteLine("triangle feature is not enabled in your workspace.");
             }

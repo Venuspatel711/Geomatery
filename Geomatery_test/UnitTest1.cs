@@ -91,7 +91,7 @@ public class UnitTest1
         }
         
         [TestMethod]
-        public void CalculatePerimeter_EquilateralTriangleWithSideLength5_Returns15()
+        public void Perimeter_EquilateralTriangleWithSideLength5_Returns15()
         {
            
             double baseLength = 5;
@@ -101,7 +101,7 @@ public class UnitTest1
         }
 
         [TestMethod]
-        public void CalculatePerimeter_EquilateralTriangleWithSideLength10_Returns30()
+        public void Perimeter_EquilateralTriangleWithSideLength10_Returns30()
         {
            
             double baseLength = 10;
@@ -112,27 +112,27 @@ public class UnitTest1
 
         // test cases for rectangle 
         [TestMethod]
-        public void CalculateArea_Length5Width3_Returns15()
+        public void Area_Length5Width3_Returns15()
         {
             irectangle rectangle = new irectangle(5, 3);
             double area = rectangle.CalculateArea();
             Assert.AreEqual(15, area);
         }
          [TestMethod]
-        public void CalculateArea_Length0Width10_Returns0()
+        public void Area_Length0Width10_Returns0()
         {
             irectangle rectangle = new irectangle(0, 10);
             double area = rectangle.CalculateArea();
             Assert.AreEqual(0, area);
         }
         [TestMethod]
-        public void CalculateArea_Length7Width7_Returns49()
+        public void Area_Length7Width7_Returns49()
         {
             irectangle rectangle = new irectangle(7, 7);
             double area = rectangle.CalculateArea();
             Assert.AreEqual(49, area);
         }
-        // test cases for triangle perimeter
+        // test cases for rectangle perimeter
         [TestMethod]
         public void Perimeter_Length5Width3_Returns16()
         {
