@@ -14,7 +14,7 @@ namespace ShapeCalculator
             var featureManagement = new Dictionary<string, string>
             {
                 { "FeatureManagement:Square", "true" },
-                { "FeatureManagement:Rectangle", "true" },
+                { "FeatureManagement:Rectangle", "false" },
                 { "FeatureManagement:Triangle", "true" }
             };
 
@@ -23,7 +23,7 @@ namespace ShapeCalculator
                 .Build();
 
             bool isSquareFeatureEnabled = configuration["FeatureManagement:Square"].ToLower() == "true";
-            bool isRectangleFeatureEnabled = configuration["FeatureManagement:Rectangle"].ToLower() == "true";
+            bool isRectangleFeatureEnabled = configuration["FeatureManagement:Rectangle"].ToLower() == "false";
             bool isTriangleFeatureEnabled = configuration["FeatureManagement:Triangle"].ToLower() == "true";
 
             var services = new ServiceCollection();
