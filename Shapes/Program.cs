@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
-using System.Threading.Tasks;
-using System.Drawing;
 
 
 var featureManagement = new Dictionary<string, string> {{ "FeatureManagement:Square", "true"}, { "FeatureManagement:Rectangle", "false"}, { "FeatureManagement:Triangle", "true"}};
@@ -28,7 +26,7 @@ var featureManagement = new Dictionary<string, string> {{ "FeatureManagement:Squ
                 Console.WriteLine($"Square Area: {square.CalculateArea()}");
                 Console.WriteLine($"Square Perimeter: {square.CalculatePerimeter()}");        
              }
-            else
+            else                              
             {
                 Console.WriteLine("Square feature is not enabled in your workspace.");
             }
@@ -50,6 +48,7 @@ var featureManagement = new Dictionary<string, string> {{ "FeatureManagement:Squ
              }
             else
             {
+                // not providing access to rectangle it will threw an message to you.
                 Console.WriteLine("rectangle feature is not enabled in your workspace.");
             }
             if (await featureManager.IsEnabledAsync("triangle"))
