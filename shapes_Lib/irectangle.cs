@@ -19,4 +19,7 @@ public class irectangle : IShape
     {
         return 2 * (Length + Width);
     }
+    // test cases for triangle perimeter
+    
+    
 }

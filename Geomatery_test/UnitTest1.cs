@@ -109,4 +109,62 @@ public class UnitTest1
             double result = triangle.CalculatePerimeter();
             Assert.AreEqual(30, result);
         }
+
+        // test cases for rectangle 
+        [TestMethod]
+        public void CalculateArea_Length5Width3_Returns15()
+        {
+            irectangle rectangle = new irectangle(5, 3);
+            double area = rectangle.CalculateArea();
+            Assert.AreEqual(15, area);
+        }
+         [TestMethod]
+        public void CalculateArea_Length0Width10_Returns0()
+        {
+            irectangle rectangle = new irectangle(0, 10);
+            double area = rectangle.CalculateArea();
+            Assert.AreEqual(0, area);
+        }
+        [TestMethod]
+        public void CalculateArea_Length7Width7_Returns49()
+        {
+            irectangle rectangle = new irectangle(7, 7);
+            double area = rectangle.CalculateArea();
+            Assert.AreEqual(49, area);
+        }
+        // test cases for triangle perimeter
+        [TestMethod]
+        public void Perimeter_Length5Width3_Returns16()
+        {
+          
+            double length = 5;
+            double width = 3;
+            irectangle rectangle = new irectangle(length, width);
+            double perimeter = rectangle.CalculatePerimeter();
+            Assert.AreEqual(16, perimeter);
+        }
+        
+    [TestMethod]
+    public void Perimeter_Length10Width10_Returns40()
+    {
+       
+        double length = 10;
+        double width = 10;
+        irectangle rectangle = new irectangle(length, width);
+        double perimeter = rectangle.CalculatePerimeter();
+        Assert.AreEqual(40, perimeter);
+    }
+    [TestMethod]
+    public void Perimeter_Length0Width0_Returns0()
+    {
+       
+        double length = 0;
+        double width = 0;
+        irectangle rectangle = new irectangle(length, width);
+        double perimeter = rectangle.CalculatePerimeter();
+        Assert.AreEqual(0, perimeter);
+    }
+
+
+
 }
